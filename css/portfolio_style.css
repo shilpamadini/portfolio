@@ -1,3 +1,4 @@
+
 body {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     display:block;
@@ -21,7 +22,7 @@ header {
     padding: 10px 10px 15px 10px ;
 }
 
-.name h1{
+.name h1 {
     color:#2d3c49;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 3.5vmin;
@@ -29,7 +30,7 @@ header {
     text-align:right;
 }
 
-.name h3{
+.name h3 {
     color:#2d3c49;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 2.5vmin;
@@ -83,13 +84,6 @@ header {
     padding-bottom:10%;
 }
 
-@media (min-width: 700px) {
-    .short-description {
-        font-size : 25px;
-        font-weight: normal;
-    }
-}
-
 .display-work {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -105,24 +99,21 @@ article {
 .work-img {
     height: 100%;
     width: 100%;
-    max-width: NNNpx;
     object-fit: cover;
 }
 
 .work-title {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    padding:30px;
-    background-color: rgba(251, 248, 248, 0.5);
+    padding:25px;
+    /*background-color: rgba(251, 248, 248, 0.5);*/
 }
 
 a {
 	text-decoration: none;
     color: #fff;
     font-size: 20px;
-    text-align: left;
-    font-weight: lighter;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -156,4 +147,42 @@ a {
     height: 7vmin;
     width: 7vmin;
     padding: 10px 5px 5px 5px;
+}
+
+/* media rules for DIP above 700px*/
+
+@media (min-width: 700px) {
+    .short-description {
+        font-size : 25px;
+        font-weight: normal;
+    }
+}
+
+@media (min-width: 700px) {
+    .media-logo img {
+        height: 5vmin;
+        width: 5vmin;
+        padding: 10px 5px 5px 5px;
+    }
+}
+
+@media (min-width: 700px) {
+    .work-header {
+        height: 4vw;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        background-color: white;
+        color:#7d97ad;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 6vw;
+    }
+    .name h1 {
+        font-size: 3.0vmin;
+        padding-top: 5px;
+    }
 }
