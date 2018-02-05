@@ -1,0 +1,188 @@
+
+body {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif ;
+    display:block ;
+    overflow-x:hidden ;
+}
+
+/* Style rules for the header section */
+
+header {
+    height: 4vw ;
+    background-color: #fff ;
+    padding:10px ;
+    top:0 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    border-bottom: 0.75mm solid #7d97ad ;
+}
+
+.name {
+    padding: 10px 10px 15px 10px ;
+}
+
+.name h1 {
+    color:#2d3c49 ;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif ;
+    font-size: 3.5vmin ;
+    font-weight:lighter ;
+    text-align:right ;
+}
+
+.name h3 {
+    color:#2d3c49 ;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif ;
+    font-size: 2.5vmin ;
+    font-weight:bold ;
+    text-align:right ;
+}
+
+.logo {
+    height: 20vw ;
+}
+
+.logo img {
+    max-width: 100% ;
+    width: 100% ;
+    height:100% ;
+}
+
+/* style rules for main section */
+
+.work-header {
+    height: 2vw ;
+    margin-bottom: 5px ;
+    margin-top: 5px ;
+    padding-bottom: 10px ;
+    background-color: white ;
+    color:#7d97ad ;
+}
+
+.work-header h1 {
+    font-weight: normal ;
+    font-size: 5vmin ;
+}
+
+.description {
+    margin-bottom: 10px ;
+    margin-top: 5px ;
+    color: white ;
+    align-items: center ;
+    background: url('https://thumb7.shutterstock.com/display_pic_with_logo/461077/186059867/stock-photo-background-conceptual-image-with-business-sketches-on-chalkboard-186059867.jpg')center #333 no-repeat ;
+    background-size: cover ;
+}
+
+.short-description {
+    max-width: 900px ;
+    font-size: 3vmin ;
+    line-height: 1.2em ;
+    font-weight: bold ;
+    margin-right: 50px ;
+    margin-left: 50px ;
+    padding-top: 10% ;
+    padding-bottom:10% ;
+}
+
+.display-work {
+    display:grid ;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+    grid-gap: 30px ;
+    max-width: 1000px ;
+    margin:0 auto 30px ;
+}
+
+article {
+    position: relative ;
+}
+
+.work-img {
+    height: 100% ;
+    width: 100% ;
+    object-fit: cover ;
+}
+
+.work-title {
+    position: absolute ;
+    bottom: 0 ;
+    padding:25px ;
+    /*background-color: rgba(251, 248, 248, 0.5) ;*/
+}
+
+a {
+	text-decoration: none ;
+    color: #fff ;
+    font-size: 20px ;
+    font-weight: bold ;
+    color: #fff ;
+}
+
+/* style rules for footer section */
+
+.footer {
+    height: 3vw ;
+    background-color: #fff ;
+    margin-top: 10px ;
+    padding:10px ;
+    display: flex ;
+    align-items: center ;
+    bottom:0 ;
+    border-top: 0.75mm solid #7d97ad ;
+    justify-content: space-between ;
+
+}
+
+.footer p {
+    font-weight: bold ;
+}
+
+.social-media {
+    display: flex ;
+    justify-content: flex-end ;
+    align-items: center ;
+    padding: 15px 30px 10px 10px ;
+}
+
+.media-logo img {
+    height: 7vmin ;
+    width: 7vmin ;
+    padding: 10px 5px 5px 5px ;
+}
+
+/* media rules for DIP above 700px*/
+
+@media (min-width: 700px) {
+    .short-description {
+        font-size : 25px ;
+        font-weight: normal ;
+    }
+}
+
+@media (min-width: 700px) {
+    .media-logo img {
+        height: 5vmin ;
+        width: 5vmin ;
+        padding: 10px 5px 5px 5px ;
+    }
+}
+
+@media (min-width: 700px) {
+    .work-header {
+        height: 4vw ;
+        margin-bottom: 5px ;
+        margin-top: 5px ;
+        padding-bottom: 10px ;
+        background-color: white ;
+        color:#7d97ad ;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 6vw ;
+    }
+    .name h1 {
+        font-size: 3.0vmin ;
+        padding-top: 5px ;
+    }
+}
