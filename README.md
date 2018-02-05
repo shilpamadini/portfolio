@@ -4,7 +4,7 @@ This folder contains the information for Portfolio website front-end project.
 
 ## Contents
 
-1. portfolio.html
+1. index.html
     * Contains the html code to generate webpage.
 2. css/portfolio_style.css
     * CSS style rules used my portfolio webpage.
